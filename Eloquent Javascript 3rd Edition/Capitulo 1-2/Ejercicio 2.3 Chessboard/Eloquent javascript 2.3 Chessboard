@@ -1,0 +1,30 @@
+let size=0,width=0,height=0,row='',chessboard='';
+    size = Number(prompt('Enter the size fo the chessboard'));
+    while(height<=size){
+        if ((height % 2) == 0){
+            while(width<size){
+            if((width % 2) == 0){
+                row+=' ';
+            } else{
+                row+='#';
+            }
+                width++;
+            }
+            
+        } else{
+            while(width<size){
+            if((width % 2) == 0){
+                row+='#';
+            } else{
+                row+=' ';
+            }
+                width++;
+            }
+            
+        }
+        chessboard+=(row+'\n');
+        row='';
+        width=0;
+        height++;
+    }
+console.log(chessboard);
