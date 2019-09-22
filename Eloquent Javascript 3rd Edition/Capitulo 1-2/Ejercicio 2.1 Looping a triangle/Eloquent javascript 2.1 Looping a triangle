@@ -1,0 +1,6 @@
+let count=0,block='';
+    while(count<7){
+        block+= '#';
+        console.log(block);
+        count++;
+    }
