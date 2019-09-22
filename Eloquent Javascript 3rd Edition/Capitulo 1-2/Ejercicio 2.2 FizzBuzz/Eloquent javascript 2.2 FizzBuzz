@@ -1,0 +1,14 @@
+let count=1,answer='';
+    while(count<=100){
+        if((count % 3) == 0){
+            answer+='Fizz';
+            if((count % 5) == 0){
+                answer+='Buzz';
+            }
+        } else if((count % 5) == 0){
+            answer+='Buzz';
+        }
+        console.log(count+' '+answer);
+        count++;
+        answer='';
+    }
